@@ -9,6 +9,6 @@ set hour=%time:~0,2%
 set minute=%time:~3,2%
 set second=%time:~6,2%
 
-tzutil /g "China Standard Time"
+tzutil /s "China Standard Time"
 echo %date:~0,14% >> compile_time.txt
 echo %time:~0,8% >> compile_time.txt
