@@ -1,4 +1,13 @@
-REM Êä³öµ±Ç°ÈÕÆÚºÍÊ±¼ä£¬²¢±£´æµ½compile_time.txtÎÄ¼þÖÐ
+REM è¾“å‡ºå½“å‰æ—¥æœŸå’Œæ—¶é—´ï¼Œå¹¶ä¿å­˜åˆ°compile_time.txtæ–‡ä»¶ä¸­
 del /F /Q compile_time.txt
-echo %date:~0,10% >> compile_time.txt
+
+set year=%date:~10,4%
+set month=%date:~4,2%
+set day=%date:~7,2%
+
+set hour=%time:~0,2%
+set minute=%time:~3,2%
+set second=%time:~6,2%
+
+echo %date:~0,14% >> compile_time.txt
 echo %time:~0,8% >> compile_time.txt
