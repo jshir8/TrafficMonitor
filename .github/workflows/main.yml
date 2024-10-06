@@ -18,7 +18,7 @@ jobs:
       run: msbuild -p:configuration=release -p:platform=x64 -p:platformToolset=v142
       
     - name: Get current time
-      uses: josStorer/get-current-time@v2.0.2
+      uses: josStorer/get-current-time@v2
       id: current-time
       with:
         format: YYYYMMDD_HHmmss
@@ -51,7 +51,7 @@ jobs:
       run: msbuild -p:configuration=release -p:platform=x86 -p:platformToolset=v142
       
     - name: Get current time
-      uses: josStorer/get-current-time@v2.0.2
+      uses: josStorer/get-current-time@v2
       id: current-time
       with:
         format: YYYYMMDD_HHmmss
