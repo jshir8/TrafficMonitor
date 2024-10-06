@@ -22,7 +22,7 @@ jobs:
         utcOffset: "+08:00"
       
     - name : Upload artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: x64_${{ steps.current-time.outputs.formattedTime }}_TrafficMonitor
         path: |
@@ -30,7 +30,7 @@ jobs:
           Bin/x64/Release/*.dll
 
     - name : Upload pdb files
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: x64_${{ steps.current-time.outputs.formattedTime }}_pdb
         path: Bin/x64/Release/*.pdb
@@ -55,7 +55,7 @@ jobs:
         utcOffset: "+08:00"
       
     - name : Upload artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: x86_${{ steps.current-time.outputs.formattedTime }}_TrafficMonitor
         path: |
@@ -63,7 +63,7 @@ jobs:
           Bin/Release/*.dll
       
     - name : Upload pdb files
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: x86_${{ steps.current-time.outputs.formattedTime }}_pdb
         path: Bin/Release/*.pdb
